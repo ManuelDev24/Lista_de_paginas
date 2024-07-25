@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lista_de_paginas.MainPage">
+
+    <StackLayout>
+        <Frame BorderColor="Orange" CornerRadius="10" Padding="8">
+            <StackLayout>
+                <Label Text="Mis Lenguajes De Programación Favoritos" Margin="5" Padding="5" FontSize="26" TextColor="red" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <BoxView Color="GreenYellow" HeightRequest="2" HorizontalOptions="Fill" />
+            </StackLayout>
+        </Frame>
+
+        <ScrollView>
+            <StackLayout>
+                <Grid BackgroundColor="#f5f6fa" Margin="5" Padding="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="195" />
+                        <ColumnDefinition Width="195" />
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Source="CSHARP.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="0" Grid.Column="0" BackgroundColor="#F79F1F" x:Name="ir_html" Clicked="ir_html_Clicked" />
+                    <ImageButton Source="CPLUS.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="0" Grid.Column="1" BackgroundColor="#0abde3" x:Name="Ir_css" Clicked="Ir_css_Clicked"/>
+                    <ImageButton Source="APPLESW.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="1" Grid.Column="0" BackgroundColor="#ffdd59" />
+                    <ImageButton Source="GO.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="1" Grid.Column="1" BackgroundColor="#706fd3" />
+                    <ImageButton Source="JS.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="2" Grid.Column="0" BackgroundColor="#f7f1e3" />
+                    <ImageButton Source="MYSQL.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="2" Grid.Column="1" BackgroundColor="#f7f1e3" />
+                    <ImageButton Source="PHP.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="3" Grid.Column="0" BackgroundColor="#f7f1e3" />
+                    <ImageButton Source="PYTHON.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="3" Grid.Column="1" BackgroundColor="#f7f1e3" />
+                    <ImageButton Source="RUBY.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="4" Grid.Column="0" BackgroundColor="#ff5252"/>
+                    <ImageButton Source="SQL.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="4" Grid.Column="1" BackgroundColor="White" />
+                    <ImageButton Source="ANGULAR.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="5" Grid.Column="0" BackgroundColor="#d2dae2"  />
+                    <ImageButton Source="REACT.png" CornerRadius="50" BorderColor="White" BorderWidth="5" Grid.Row="5" Grid.Column="1" BackgroundColor="#0be881"/>
+                    <ImageButton Source="CSS3.png" CornerRadius="50" BorderColor="White" BorderWidth="6" Grid.Row="6" Grid.Column="0" BackgroundColor="#dff9fb" />
+                    <ImageButton Source="XAMARIN.png" CornerRadius="50" BorderColor="White" BorderWidth="6" Grid.Row="6" Grid.Column="1" BackgroundColor="#dff9fb" />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+
+</ContentPage>
